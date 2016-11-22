@@ -88,7 +88,7 @@ var Datetime = React.createClass({
 
 		viewDate = selectedDate ?
 			selectedDate.clone().startOf('month') :
-			this.localMoment().startOf('month')
+			this.localMoment().startOf('month').hours(9)
 		;
 
 		updateOn = this.getUpdateOn(formats);
